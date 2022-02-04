@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+--VeryDarkBlue: hsl(234, 12%, 34%);
+--GrayishBlue: hsl(229, 6%, 66%);
+--VeryLightGray: hsl(0, 0%, 98%);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: var(--VeryDarkBlue);
+  background-color: var(--VeryLightGray)
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.cred {
+  font-size: 29px;
+  font-weight: 200;
+}
+
+.sponsored {
+  font-size: 29px;
+  font-weight: 600;
+}
+
+header :last-child {
+  text-align: center;
+  font-size: 13px;
+  color: var(--GrayishBlue);
+  max-width: 400px;
+  margin-top: 15px;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.cards {
+  padding: 25px;
+  border-radius: 5px;
+  border-top: solid 4px;
+  box-shadow: 0 10px 15px rgba(211, 226, 223, 0.911);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 240px;
+  position: relative;
+}
+
+.center {
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.job {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.disc {
+  color: var(--GrayishBlue);
+  font-size: 11px;
+  line-height: 2;
+}
+
+.one {
+  border-color: var(--Cyan);
+}
+
+.two {
+  border-color: var(--Red);
+}
+
+.three {
+  border-color: var(--Orange);
+}
+
+.four {
+  border-color: var(--Blue);
+}
+
+.cards img {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  /* transform: scale(0.8); */
+}
+
+@media (max-width: 375px) {
+  main {
+    width: 100%;
+    padding: 35px;
+    position: initial;
+    transform: translate(0);
+  }
+
+  .cred {
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .sponsored {
+    font-size: 23px;
+    text-align: center;
+  }
+
+  header {
+    margin: 40px 0;
+  }
+
+  header :last-child {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  .cards {
+    width: 100%;
+    min-height: 250px;
+    margin-bottom: 25px;
+    font-size: 23px;
+    padding: 25px 30px 30px;
+    border-radius: 7px;
+  }
+
+  .center {
+    margin: 0;
+    gap: 0;
+  }
+
+  .disc {
+    font-size: 12.5px;
+    line-height: initial;
+  }
+
+  .cards img {
+    right: 30px;
+    bottom: 30px;
+    transform: scale(0.9);
+  }
+}
