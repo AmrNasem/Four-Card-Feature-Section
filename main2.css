@@ -25,34 +25,34 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .cred {
-  font-size: 29px;
+  font-size: 34px;
   font-weight: 200;
 }
 
 .sponsored {
-  font-size: 29px;
+  font-size: 34px;
   font-weight: 600;
 }
 
 header :last-child {
   text-align: center;
-  font-size: 13px;
+  font-size: 18px;
   color: var(--GrayishBlue);
-  max-width: 400px;
+  max-width: 490px;
   margin-top: 15px;
 }
 
@@ -64,34 +64,34 @@ section {
 }
 
 .cards {
-  padding: 25px;
+  padding: 35px;
   border-radius: 5px;
   border-top: solid 4px;
   box-shadow: 0 10px 15px rgba(211, 226, 223, 0.911);
   background-color: white;
   display: flex;
   flex-direction: column;
-  width: 330px;
-  height: 240px;
+  width: 380px;
+  height: 270px;
   position: relative;
 }
 
 .center {
-  margin: 25px;
+  margin: 30px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 30px;
 }
 
 .job {
   margin-bottom: 5px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 19px;
 }
 
 .disc {
   color: var(--GrayishBlue);
-  font-size: 11px;
+  font-size: 12px;
   line-height: 2;
 }
 
@@ -113,8 +113,8 @@ section {
 
 .cards img {
   position: absolute;
-  right: 25px;
-  bottom: 25px;
+  right: 35px;
+  bottom: 35px;
   /* transform: scale(0.8); */
 }
 
